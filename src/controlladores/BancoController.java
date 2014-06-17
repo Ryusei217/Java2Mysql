@@ -31,6 +31,7 @@ public class BancoController {
                         + Factory.getDatos().getString("nombre")
                 );
             }
+            Factory.desconectar();
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(BancoController.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
